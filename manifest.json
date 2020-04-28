@@ -1,0 +1,14 @@
+{
+    "version": "0.2",
+    "requires" : ["pandas"],
+    "dumper" : {
+        "data_url" : ["file:///C:/Dev/biothings_demo/data/gene_drug_associations/mutation_drug_pairs.csv",
+                      "file:///C:/Dev/biothings_demo/data/gene_drug_associations/GDSC_Drug_anno.csv"],
+        "uncompress" : false
+    },
+    "uploader" : {
+        "parser" : ["parser:load_gene_drug_associations",
+                    "parser:load_drug_annotations"],
+        "on_duplicates" : "error"
+    }
+}
