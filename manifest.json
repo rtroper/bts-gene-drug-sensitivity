@@ -7,8 +7,7 @@
         "uncompress" : false
     },
     "uploader" : {
-        "parser" : ["parser:load_gene_drug_associations",
-                    "parser:load_drug_annotations"],
+        "parser" : "parser:load_gene_drug_associations",
         "on_duplicates" : "error"
     }
 }
